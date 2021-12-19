@@ -1,0 +1,152 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul_with_reg_IN_MBE
+Version: O-2018.06-SP4
+Date   : Sun Dec 19 23:20:01 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/B_SIG_reg[2]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/sig_SIG_in_int_reg[27]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul_with_reg_IN_MBE
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/B_SIG_reg[2]/CK (DFF_X1)                             0.00       0.00 r
+  I1/B_SIG_reg[2]/Q (DFF_X1)                              0.10       0.10 r
+  U4858/ZN (OR3_X1)                                       0.05       0.15 r
+  U6112/ZN (OAI221_X1)                                    0.04       0.19 f
+  I2/I2combo/partial_product_generator/PP1_reg[0]/Q (DLH_X1)
+                                                          0.07       0.26 f
+  U3342/Z (XOR2_X1)                                       0.07       0.34 f
+  I2/I2combo/add_2889/A[2] (FPmul_with_reg_IN_MBE_DW01_add_2)
+                                                          0.00       0.34 f
+  I2/I2combo/add_2889/U237/ZN (OAI21_X1)                  0.04       0.38 r
+  I2/I2combo/add_2889/U212/ZN (INV_X1)                    0.02       0.40 f
+  I2/I2combo/add_2889/U235/ZN (AOI22_X1)                  0.05       0.45 r
+  I2/I2combo/add_2889/U213/ZN (INV_X1)                    0.03       0.48 f
+  I2/I2combo/add_2889/U234/ZN (OAI21_X1)                  0.04       0.52 r
+  I2/I2combo/add_2889/U210/ZN (INV_X1)                    0.02       0.54 f
+  I2/I2combo/add_2889/U56/ZN (OR2_X1)                     0.05       0.60 f
+  I2/I2combo/add_2889/U233/ZN (OAI21_X1)                  0.04       0.64 r
+  I2/I2combo/add_2889/U41/ZN (NAND2_X1)                   0.03       0.67 f
+  I2/I2combo/add_2889/U232/ZN (OAI21_X1)                  0.04       0.71 r
+  I2/I2combo/add_2889/U119/ZN (NAND2_X1)                  0.03       0.74 f
+  I2/I2combo/add_2889/U231/ZN (OAI21_X1)                  0.04       0.78 r
+  I2/I2combo/add_2889/U118/ZN (NAND2_X1)                  0.03       0.82 f
+  I2/I2combo/add_2889/U230/ZN (OAI21_X1)                  0.04       0.86 r
+  I2/I2combo/add_2889/U211/ZN (INV_X1)                    0.02       0.88 f
+  I2/I2combo/add_2889/U229/ZN (AOI21_X1)                  0.05       0.93 r
+  I2/I2combo/add_2889/U214/ZN (INV_X1)                    0.03       0.96 f
+  I2/I2combo/add_2889/U228/ZN (OAI21_X1)                  0.04       1.00 r
+  I2/I2combo/add_2889/U81/ZN (NAND2_X1)                   0.03       1.03 f
+  I2/I2combo/add_2889/U227/ZN (OAI21_X1)                  0.04       1.07 r
+  I2/I2combo/add_2889/U176/ZN (OAI21_X1)                  0.04       1.11 f
+  I2/I2combo/add_2889/U226/ZN (OAI21_X1)                  0.04       1.15 r
+  I2/I2combo/add_2889/U204/ZN (OAI21_X1)                  0.04       1.19 f
+  I2/I2combo/add_2889/U22/ZN (OAI21_X1)                   0.04       1.24 r
+  I2/I2combo/add_2889/U24/ZN (NAND2_X1)                   0.03       1.27 f
+  I2/I2combo/add_2889/U224/ZN (OAI21_X1)                  0.04       1.31 r
+  I2/I2combo/add_2889/U79/ZN (NAND2_X1)                   0.04       1.34 f
+  I2/I2combo/add_2889/U59/ZN (OAI21_X1)                   0.04       1.39 r
+  I2/I2combo/add_2889/U58/ZN (NAND2_X1)                   0.03       1.41 f
+  I2/I2combo/add_2889/U222/ZN (OAI21_X1)                  0.04       1.45 r
+  I2/I2combo/add_2889/U207/ZN (NAND2_X1)                  0.04       1.49 f
+  I2/I2combo/add_2889/U221/ZN (OAI21_X1)                  0.04       1.53 r
+  I2/I2combo/add_2889/U120/ZN (NAND2_X1)                  0.03       1.56 f
+  I2/I2combo/add_2889/U220/ZN (OAI21_X1)                  0.04       1.60 r
+  I2/I2combo/add_2889/U203/ZN (OAI21_X1)                  0.04       1.64 f
+  I2/I2combo/add_2889/U219/ZN (OAI21_X1)                  0.04       1.68 r
+  I2/I2combo/add_2889/U40/ZN (OAI21_X1)                   0.04       1.72 f
+  I2/I2combo/add_2889/U218/ZN (OAI21_X1)                  0.04       1.76 r
+  I2/I2combo/add_2889/U208/ZN (OAI21_X1)                  0.04       1.80 f
+  I2/I2combo/add_2889/U217/ZN (OAI21_X1)                  0.04       1.84 r
+  I2/I2combo/add_2889/U80/ZN (NAND2_X1)                   0.04       1.88 f
+  I2/I2combo/add_2889/U97/ZN (OAI21_X1)                   0.04       1.92 r
+  I2/I2combo/add_2889/U90/ZN (NAND2_X1)                   0.03       1.95 f
+  I2/I2combo/add_2889/U215/ZN (OAI21_X1)                  0.04       1.99 r
+  I2/I2combo/add_2889/U205/ZN (NAND2_X1)                  0.04       2.03 f
+  I2/I2combo/add_2889/U165/ZN (NAND2_X1)                  0.04       2.06 r
+  I2/I2combo/add_2889/U168/ZN (NAND3_X1)                  0.04       2.11 f
+  I2/I2combo/add_2889/U172/ZN (NAND2_X1)                  0.04       2.15 r
+  I2/I2combo/add_2889/U4/ZN (NAND3_X1)                    0.04       2.19 f
+  I2/I2combo/add_2889/U12/ZN (NAND2_X1)                   0.03       2.22 r
+  I2/I2combo/add_2889/U15/ZN (NAND3_X1)                   0.04       2.26 f
+  I2/I2combo/add_2889/U148/ZN (NAND2_X1)                  0.04       2.30 r
+  I2/I2combo/add_2889/U5/ZN (NAND3_X1)                    0.04       2.35 f
+  I2/I2combo/add_2889/U30/ZN (NAND2_X1)                   0.04       2.39 r
+  I2/I2combo/add_2889/U1/ZN (NAND3_X1)                    0.04       2.43 f
+  I2/I2combo/add_2889/U94/ZN (NAND2_X1)                   0.03       2.46 r
+  I2/I2combo/add_2889/U96/ZN (NAND3_X1)                   0.04       2.50 f
+  I2/I2combo/add_2889/U63/ZN (NAND2_X1)                   0.04       2.55 r
+  I2/I2combo/add_2889/U65/ZN (NAND3_X1)                   0.04       2.58 f
+  I2/I2combo/add_2889/U194/ZN (NAND2_X1)                  0.03       2.61 r
+  I2/I2combo/add_2889/U196/ZN (NAND3_X1)                  0.04       2.66 f
+  I2/I2combo/add_2889/U200/ZN (NAND2_X1)                  0.03       2.69 r
+  I2/I2combo/add_2889/U202/ZN (NAND3_X1)                  0.03       2.72 f
+  I2/I2combo/add_2889/U1_31/CO (FA_X1)                    0.10       2.82 f
+  I2/I2combo/add_2889/U153/ZN (NAND2_X1)                  0.04       2.86 r
+  I2/I2combo/add_2889/U156/ZN (NAND3_X1)                  0.04       2.91 f
+  I2/I2combo/add_2889/U159/ZN (NAND2_X1)                  0.04       2.94 r
+  I2/I2combo/add_2889/U16/ZN (NAND3_X1)                   0.04       2.99 f
+  I2/I2combo/add_2889/U50/ZN (NAND2_X1)                   0.04       3.02 r
+  I2/I2combo/add_2889/U45/ZN (NAND3_X1)                   0.04       3.06 f
+  I2/I2combo/add_2889/U112/ZN (NAND2_X1)                  0.04       3.10 r
+  I2/I2combo/add_2889/U115/ZN (NAND3_X1)                  0.04       3.14 f
+  I2/I2combo/add_2889/U129/ZN (NAND2_X1)                  0.04       3.18 r
+  I2/I2combo/add_2889/U132/ZN (NAND3_X1)                  0.04       3.22 f
+  I2/I2combo/add_2889/U87/ZN (NAND2_X1)                   0.03       3.25 r
+  I2/I2combo/add_2889/U89/ZN (NAND3_X1)                   0.04       3.29 f
+  I2/I2combo/add_2889/U1_38/CO (FA_X1)                    0.10       3.38 f
+  I2/I2combo/add_2889/U182/ZN (NAND2_X1)                  0.05       3.43 r
+  I2/I2combo/add_2889/U76/ZN (NAND3_X1)                   0.04       3.47 f
+  I2/I2combo/add_2889/U188/ZN (NAND2_X1)                  0.04       3.51 r
+  I2/I2combo/add_2889/U34/ZN (NAND3_X1)                   0.04       3.55 f
+  I2/I2combo/add_2889/U69/ZN (NAND2_X1)                   0.03       3.58 r
+  I2/I2combo/add_2889/U72/ZN (NAND3_X1)                   0.04       3.62 f
+  I2/I2combo/add_2889/U136/ZN (NAND2_X1)                  0.04       3.66 r
+  I2/I2combo/add_2889/U138/ZN (NAND3_X1)                  0.04       3.71 f
+  I2/I2combo/add_2889/U142/ZN (NAND2_X1)                  0.03       3.74 r
+  I2/I2combo/add_2889/U144/ZN (NAND3_X1)                  0.03       3.77 f
+  I2/I2combo/add_2889/U1_44/CO (FA_X1)                    0.09       3.87 f
+  I2/I2combo/add_2889/U101/ZN (NAND2_X1)                  0.04       3.91 r
+  I2/I2combo/add_2889/U103/ZN (NAND3_X1)                  0.04       3.95 f
+  I2/I2combo/add_2889/U107/ZN (NAND2_X1)                  0.03       3.99 r
+  I2/I2combo/add_2889/U109/ZN (NAND3_X1)                  0.03       4.02 f
+  I2/I2combo/add_2889/U26/ZN (XNOR2_X1)                   0.05       4.07 f
+  I2/I2combo/add_2889/SUM[47] (FPmul_with_reg_IN_MBE_DW01_add_2)
+                                                          0.00       4.07 f
+  I2/sig_SIG_in_int_reg[27]/D (DFF_X1)                    0.01       4.08 f
+  data arrival time                                                  4.08
+
+  clock MY_CLK (rise edge)                                4.20       4.20
+  clock network delay (ideal)                             0.00       4.20
+  clock uncertainty                                      -0.07       4.13
+  I2/sig_SIG_in_int_reg[27]/CK (DFF_X1)                   0.00       4.13 r
+  library setup time                                     -0.04       4.09
+  data required time                                                 4.09
+  --------------------------------------------------------------------------
+  data required time                                                 4.09
+  data arrival time                                                 -4.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

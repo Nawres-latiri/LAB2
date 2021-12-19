@@ -1,0 +1,33 @@
+Warning: Design 'FPmul_with_reg_OUT' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : FPmul_with_reg_OUT
+Version: O-2018.06-SP4
+Date   : Sun Dec 19 16:27:11 2021
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+Number of ports:                          301
+Number of nets:                          2361
+Number of cells:                         1731
+Number of combinational cells:           1457
+Number of sequential cells:               250
+Number of macros/black boxes:               0
+Number of buf/inv:                        194
+Number of references:                      32
+
+Combinational area:               2772.518007
+Buf/Inv area:                      121.828000
+Noncombinational area:            1158.429965
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  3930.947972
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

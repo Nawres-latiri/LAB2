@@ -1,0 +1,64 @@
+Warning: Design 'FPmul_with_reg_OUT' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul_with_reg_OUT
+Version: O-2018.06-SP4
+Date   : Mon Dec 20 00:02:40 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I2/SIG_in_reg[27]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I3/SIG_out_round_reg[26]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul_with_reg_OUT 5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MY_CLK (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  I2/SIG_in_reg[27]/CK (DFF_X1)            0.00       0.00 r
+  I2/SIG_in_reg[27]/QN (DFF_X1)            0.07       0.07 f
+  U246/ZN (INV_X1)                         0.07       0.14 r
+  U270/Z (MUX2_X1)                         0.07       0.21 r
+  U272/ZN (NAND2_X1)                       0.03       0.24 f
+  U273/ZN (NOR2_X1)                        0.05       0.30 r
+  U281/ZN (NAND2_X1)                       0.04       0.33 f
+  U282/ZN (NOR2_X1)                        0.05       0.39 r
+  U288/ZN (AND2_X1)                        0.05       0.44 r
+  U233/ZN (AND2_X1)                        0.05       0.48 r
+  U232/ZN (AND2_X1)                        0.05       0.53 r
+  U634/CO (HA_X1)                          0.06       0.59 r
+  U610/CO (HA_X1)                          0.06       0.65 r
+  U231/ZN (AND2_X1)                        0.05       0.69 r
+  U295/ZN (XNOR2_X1)                       0.06       0.75 r
+  U299/ZN (OAI21_X1)                       0.03       0.78 f
+  I3/SIG_out_round_reg[26]/D (DFF_X1)      0.01       0.79 f
+  data arrival time                                   0.79
+
+  clock MY_CLK (rise edge)                 0.90       0.90
+  clock network delay (ideal)              0.00       0.90
+  clock uncertainty                       -0.07       0.83
+  I3/SIG_out_round_reg[26]/CK (DFF_X1)     0.00       0.83 r
+  library setup time                      -0.04       0.79
+  data required time                                  0.79
+  -----------------------------------------------------------
+  data required time                                  0.79
+  data arrival time                                  -0.79
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
